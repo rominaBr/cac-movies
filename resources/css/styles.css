@@ -314,11 +314,16 @@
 
 .footer a{
     font-size: larger;
+    margin-left: 15px;
 }
 
 .footer a:hover{
     text-decoration: none;
     transition: none;
+}
+
+.footer .btn-negro{
+    border-radius: 5px;
 }
 
 .footer .btn-negro a:hover{
