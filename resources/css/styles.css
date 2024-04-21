@@ -1,0 +1,335 @@
+*{
+    font-weight: bold;
+}
+
+
+.principal{
+    background-color: #181419;
+}
+
+
+/*Barra de navegación*/
+
+.navbar{
+    color: white;
+}
+
+.navbar a {
+    color:white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.header .nav-item a:hover{    
+    background-color: #9F3647; 
+    border: none;
+    border-radius: 5px;    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 1px 1px 1px 1px rgb(0,0,0,.27);
+    
+}
+
+.navbar-toggler button{
+    background-color: white;
+    color: white;
+}
+
+
+/*Separador*/
+.separador{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.hr{    
+    border: 3px solid #9F3647;       
+    width: 80%;
+}
+
+
+/*Sección princial*/
+
+.seccion_principal{
+    background-image: url(../img/banner-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;    
+    height: 90vh;    
+    font-size: x-large;             
+}
+
+
+.seccion_principal div{    
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-shadow: 1px rgb(0,0,0,.27);    
+}
+
+.seccion_principal a{    
+    margin-top: 50px; 
+    font-size: larger;
+    background-color: #9F3647;
+    border-color: #9F3647;;
+}
+
+.seccion_principal a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: #9F3647;    
+}
+
+
+.seccion_principal div h2, h4{
+    text-shadow: 1px 1px black;
+    margin-top: 20px;
+}
+
+
+
+/*Sección búsqueda*/
+
+.seccion_busqueda{
+    color: white;
+    padding: 50px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.seccion_busqueda div{
+    width: max-content;
+    align-items: center;
+    
+}
+
+.seccion_busqueda h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccion_busqueda button{
+    border-color: white;  
+    background-color: #9F3647;  
+}
+
+
+.seccion_busqueda button:hover{
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: #9F3647;
+}
+
+/*Sección tendencias*/
+.seccion_tendencias img{
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.seccion_tendencias h3, .mas_aclamadas h3{
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.botones{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;    
+    margin-bottom: 40px;
+}
+
+.botones a{
+    margin-left: 20px;
+    border-color: white;
+    background-color: #9F3647;
+}
+
+.botones a:hover{
+    border-color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background-color: #9F3647;
+}
+
+/*Sección carrusel (más aclamadas)*/
+
+.mas_aclamadas{
+    margin-bottom: 40px;
+}
+
+.mas_aclamadas h3{
+    color:white;
+}
+
+
+.carrusel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scroll-snap-type: x mandatory; 
+    -webkit-overflow-scrolling: touch; 
+}
+    
+.carrusel-item {
+    display: inline-block;
+    width: 20%; 
+    scroll-snap-align: start; 
+}
+    
+.carrusel-item img {
+    width: 75%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+.carrusel-container::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+.carrusel-container::-webkit-scrollbar-track {
+  background-color:#212529; /* Color de fondo de la barra de desplazamiento */
+}
+
+.carrusel-container::-webkit-scrollbar-thumb {
+  background-color:#9F3647; /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 6px; /* Radio de borde del pulgar */
+}
+
+.carrusel-container::-webkit-scrollbar-thumb:hover {
+  background-color: #9F3647; /* Color del pulgar al pasar el mouse */
+}
+
+/*Registro*/
+
+.registro{
+    background: url("/resources/img/bg-register.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;    
+    height: 100vh;    
+    font-size: x-large;    
+}
+
+
+.registro .navbar-brand{
+    text-shadow: 1px 1px 0 #131212, -1px -1px 0 #131212, 1px -1px 0 #131212, -1px 1px 0 #131212;
+}
+
+
+@media (max-width: 600px){
+    .main-formulario .container{
+        width: 300px;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px){
+    .main-formulario .container{
+        width: 500px;
+        border-radius: 15px;
+    }
+}
+
+@media (min-width: 768px){
+    .main-formulario .container{
+        width: 700px;
+        border-radius: 15px;
+    }
+}
+
+.formulario{
+    background-color: #181419;
+    padding: 35px;
+    margin: 40px;
+    grid-row:auto;   
+
+}
+
+
+.formulario .row{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario button{
+    background-color: #9F3647;
+    border:#9F3647
+}
+
+.formulario button:hover{
+    background-color: #9F3647;
+    border:#9F3647
+}
+
+.formulario a{
+    text-decoration: none;
+    color:#262227;
+    font-size: smaller;
+}
+
+.formulario a:hover{
+    color:#262227;
+}
+
+.formulario .boton{
+    display: flex;
+    flex-direction: column;
+}
+
+.check{
+    font-size: small;
+}
+
+
+
+/*Footer*/
+
+.footer{
+    background-color: #9F3647;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    font-size: larger;
+}
+
+.footer a{
+    font-size: larger;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    transition: none;
+}
+
+.footer .btn-negro a:hover{
+    text-decoration: none;
+    background-color: #212529;
+}
+
+.custom-toggler {
+    border-color: white; /* color del borde */
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Estilo de las líneas blancas */
+}

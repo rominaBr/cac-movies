@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/resources/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="resources/css/styles.css">    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
+    <title>CAC-MOVIES</title>
+</head>
+<body>
+    <div class="container-fluid principal">   
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-danger header" style="background-color: #9F3647;">
+                <div class="container-fluid">
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><span><i class="fas fa-film"
+                                aria-hidden="true"></i></span><span>CAC-MOVIES</span></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#seccion_tendencias">Tendencias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/registro.html">Registrarse</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-dark" type="button" href="./paginas/login.html">Iniciar Sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!--Sección Principal-->
+            <section class="seccion_principal">
+                <div class="container">
+                    <h2>Películas y series ilimitadas en un solo lugar</h2>
+                    <h4>Disfrutá cuando quieras.</h4>
+                    <h4>Cancelá en cualquier momento.</h4>
+                    <a type="button" class="btn btn-danger" href="./paginas/registro.html" >Registrarse</a>
+                </div>
+            </section>
+
+            <!--Sección de búsqueda-->
+            <section class="seccion_busqueda" id="seccion_busqueda">
+                <div class="container">
+                    <h3>¿Qué estás buscando para ver?</h3>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-danger" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </section>
+            <div class="separador">
+                <hr class="hr" />
+            </div>    
+            
+            <!--Sección tendencias-->
+            <section class="seccion_tendencias" id="seccion_tendencias">
+
+                <div class="container">
+                    <h3>Las tendencias de hoy</h3>                   
+                    <div class="row row-cols-5">
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img01.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img02.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img03.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img04.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img05.jpg" alt=""></a></div>
+
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img06.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img07.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img08.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img09.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img10.jpg" alt=""></a></div>
+
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img11.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img12.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img13.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img14.jpg" alt=""></a></div>
+                        <div class="col"><a href="../paginas/detalle.html"><img src="../resources/img/tendencias/img15.jpg" alt=""></a></div>
+                    </div>  
+                     
+                    <div class="container botones">
+                        <a href="#" class="btn btn-danger">Anterior</a>
+                        <a href="#" class="btn btn-danger">Siguiente</a>
+                    </div>                 
+                </div>
+
+            </section>
+
+            <div class="separador">
+                <hr class="hr" />
+            </div>
+
+            <!--Sección más aclamadas-->
+            <section class="mas_aclamadas">
+                <h3>Las más aclamadas</h3>             
+                                
+                <div class="carrusel-container">
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img1.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img2.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img3.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img4.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img5.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img6.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img7.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img8.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img9.jpg" alt=""></div>
+                    <div class="carrusel-item"><img src="../resources/img/carrusel/img10.jpg" alt=""></div>
+                    
+                </div>
+                
+            </section>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <nav class="navbar navbar-expand-lg navbar-danger" style="background-color: #9F3647;">
+                <div class="container-fluid">                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Términos y condiciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Preguntas frecuentes</a>
+                            </li>   
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ayuda</a>
+                            </li>
+                            <li class="nav-item btn-negro">
+                                <a class="nav-link btn btn-dark" type="button" href="#">Administrador Películas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </footer>
+    
+</div>
+    
+</body>
+</html>
