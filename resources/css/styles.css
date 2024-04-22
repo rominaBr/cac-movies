@@ -215,7 +215,7 @@
 /*Registro*/
 
 .registro{
-    background: url(/resources/img/bg-register.jpg);
+    background: url(../img/bg-register.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
