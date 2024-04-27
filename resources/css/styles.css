@@ -41,6 +41,16 @@
     color: white;
 }
 
+@media (max-width: 990px){
+    .nav-item .btn-dark{
+        width: 100px;
+    }   
+    .nav-item{
+        margin-top: 5px;
+    }
+}
+
+
 
 /*Separador*/
 .separador{
@@ -337,4 +347,79 @@
 
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Estilo de las líneas blancas */
+}
+
+/*Detalle*/
+/*.fondo_detalle{
+   background: url(../img/detalles/mario-bg.jpg);
+   height: 80vh;
+   opacity: 0.3;
+}
+
+.fondo_detalle fondo{
+    display: flex;
+}
+
+.poster img{
+    border-radius: 15px;
+    margin: 25px;
+    opacity: 1;
+}
+*/
+
+    .poster {
+        display: flex;
+        align-items: center; /* Centra verticalmente los elementos */
+        margin-bottom: 20px;
+    }
+
+    .poster img {
+        margin-right: 20px;
+        height: 100%; /* La imagen ocupará toda la altura del contenedor */
+        object-fit: cover; /* La imagen se ajustará para llenar completamente el espacio sin deformarla */
+    }
+
+    .poster div {
+        flex: 1; /* La columna de texto ocupará el espacio restante */
+    }
+
+    .poster h1,
+    .poster p,
+    .poster h3 {
+        margin: 5px;
+    }
+
+.fondo_detalle {
+    position: relative;
+    height: 80vh;
+    background: url(../img/detalles/mario-bg.jpg) no-repeat center center/cover;
+}
+
+.fondo_detalle .poster {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fondo_detalle .poster img {
+    border-radius: 15px;
+    margin: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.fondo_detalle .poster::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;    
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 15px;
+    z-index: 0; 
+}
+
+.video{
+    background: #131212;
 }
