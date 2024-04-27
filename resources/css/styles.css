@@ -50,8 +50,6 @@
     }
 }
 
-
-
 /*Separador*/
 .separador{
     display: flex;
@@ -350,44 +348,28 @@
 }
 
 /*Detalle*/
-/*.fondo_detalle{
-   background: url(../img/detalles/mario-bg.jpg);
-   height: 80vh;
-   opacity: 0.3;
-}
 
-.fondo_detalle fondo{
+.poster {
     display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.poster img{
-    border-radius: 15px;
-    margin: 25px;
-    opacity: 1;
+.poster img {
+    margin-right: 20px;
+    height: 100%; 
+    object-fit: cover; 
 }
-*/
 
-    .poster {
-        display: flex;
-        align-items: center; /* Centra verticalmente los elementos */
-        margin-bottom: 20px;
-    }
+.poster div {
+    flex: 1; 
+}
 
-    .poster img {
-        margin-right: 20px;
-        height: 100%; /* La imagen ocupará toda la altura del contenedor */
-        object-fit: cover; /* La imagen se ajustará para llenar completamente el espacio sin deformarla */
-    }
-
-    .poster div {
-        flex: 1; /* La columna de texto ocupará el espacio restante */
-    }
-
-    .poster h1,
-    .poster p,
-    .poster h3 {
-        margin: 5px;
-    }
+.poster h1,
+.poster p,
+.poster h3 {
+    margin: 5px;
+}
 
 .fondo_detalle {
     position: relative;
@@ -420,6 +402,41 @@
     z-index: 0; 
 }
 
-.video{
+.seccion-video{
     background: #131212;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.yt{
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.info{
+    display: flex;
+    
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.redes li{
+    list-style:none;
+    font-size: larger; 
+    float: left;   
+    margin-left: 40px;    
+}
+
+.redes li i{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 15px;
 }
