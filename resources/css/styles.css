@@ -505,5 +505,12 @@
     }
 }
 
+.error-message {
+    color: #9F3647;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
 
 

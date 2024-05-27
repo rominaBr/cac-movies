@@ -30,8 +30,6 @@ cargarPeliculasAclamadas();
 
 function mostrarPorPantalla(peliculas, seccion){
     peliculas.forEach(pelicula => {
-        insertarPelicula(pelicula, seccion);
-        //console.log(`https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`);        
-        
+        insertarPelicula(pelicula, seccion);         
     });    
 }
