@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const pais = form.pais.value;
     const terminos = form.terminos.checked;
     
-
-    if (nombre === "" || apellido === "" || email === "" || fechanac === "" || pais === "") {
+            
+    if (nombre === "" || apellido === "" || email === "") {
         errorMessage.textContent = "Los campos no puede estar vacios.";
         return;
     }
@@ -28,14 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (password.length < 6) {
         errorMessage.textContent = "El password debe tener al menos seis digitos.";
         return;
-    }
-   
+    }   
 
-    const users = JSON.parse(localStorage.getItem("users")) || [];
-    const existingUser = users.find((user) => user.email === email);
 
-    if (existingUser) {
-        errorMessage.textContent = "El email de este usuario ya se encuentra registrado.";
+    if (fechanac === "" || pais === "") {
+        errorMessage.textContent = "Los campos no puede estar vacios.";
         return;
     }
 
@@ -44,6 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    
+    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const existingUser = users.find((user) => user.email === email);
+
+    if (existingUser) {
+        errorMessage.textContent = "El email de este usuario ya se encuentra registrado.";
+        return;
+    }
+    
     const newUser = {
         email,
         password,
