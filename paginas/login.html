@@ -27,7 +27,7 @@
         </header>
         <main class="main-formulario">
             <div class="container formulario">
-                <form class="row g-3 needs-validation" novalidate>
+                <form class="row g-3 needs-validation" id="form-login" novalidate>
                     <div class="col-md-6">
                         <h2>Iniciar Sesión</h2>
                     </div>
@@ -36,20 +36,22 @@
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
                             <input type="email" class="form-control" aria-describedby="inputGroupPrepend"
-                            placeholder="Email" required>
+                            placeholder="Email" id="email" required>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <input type="password" class="form-control"  placeholder="Contraseña" required>                        
+                        <input type="password" class="form-control" id="password"  placeholder="Contraseña" required>                        
                     </div>                                                         
                    
                     <div class="col-md-6 boton">
                         <button class="btn btn-danger" type="submit">Iniciar Sesión</button>                          
                         <a href="../paginas/registro.html">Registrarse</a>                     
                     </div>
+                    <p id="error-message" class="error-message"></p>
                 </form>
             </div>
         </main>
     </div>
+    <script src="../resources/js/login.js"></script>
 </body>
 </html>
